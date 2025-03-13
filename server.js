@@ -63,7 +63,7 @@ app.post("/apply-leave", async (req, res) => {
   }
 });
 
-// New HTML Endpoints
+
 app.get("/leaves-html", async (req, res) => {
   const leaves = await Leave.find();
   let html = "<h1>Available Leave Types</h1><ul>";
